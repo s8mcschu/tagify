@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Achievements/TTM</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Achievements/TTM" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(33.000000, 22.000000)" fill-rule="nonzero">
+            <polygon id="Polygon" fill-opacity="0.256473995" fill="#000000" points="62.1679876 65.7093007 28.6875092 83.9109643 1.81188398e-13 68.1571457 33.4804785 49.9554821"></polygon>
+            <polygon id="Polygon" fill-opacity="0.256473995" fill="#000000" points="53.8361029 66.0373661 29.329873 79.360179 8.33188468 67.8290803 32.8381146 54.5062674"></polygon>
+            <g id="Stage" transform="translate(0.000000, 54.506267)">
+                <polygon id="Polygon" fill="#FFFFFF" points="28.6875092 29.4046969 35.1421987 15.7538186 22.7905273 4.67439667 6.45468956 0 0 3.58593864"></polygon>
+                <polygon id="Polygon" fill="#ACA9DD" points="28.6875092 19.3397572 28.6875092 29.4046969 0 13.6508783 0 3.58593864"></polygon>
+                <polygon id="Path" fill="#A5A0FC" points="35.1421987 15.795148 35.1421987 25.8600877 28.6875092 29.4046969 28.6875092 19.3397572"></polygon>
+            </g>
+            <g id="Stage-Copy" transform="translate(6.454690, 40.879701)">
+                <polygon id="Polygon" fill="#FFFFFF" points="28.6875092 29.4217149 35.1421987 15.7538186 24.0257889 4.61004555 6.45468956 0 0 3.58593864"></polygon>
+                <polygon id="Polygon" fill="#C1BEF3" points="28.6875092 19.3397572 28.6875092 29.4046969 0 13.6508783 0 3.58593864"></polygon>
+                <polygon id="Path" fill="#A5A0FC" points="35.1421987 15.795148 35.1421987 25.8600877 28.6875092 29.4046969 28.6875092 19.3397572"></polygon>
+            </g>
+            <g id="Stage-Copy-2" transform="translate(12.909379, 27.253134)">
+                <polygon id="Polygon" fill="#FFFFFF" points="28.6875092 29.4217149 35.1421987 15.7538186 23.0906209 2.86875092 6.45468956 4.4414342e-16 0 3.58593864"></polygon>
+                <polygon id="Polygon" fill="#D8D6FE" points="28.6875092 19.3397572 28.6875092 29.4046969 0 13.6508783 0 3.58593864"></polygon>
+                <polygon id="Path" fill="#A5A0FC" points="35.1421987 15.795148 35.1421987 25.8600877 28.6875092 29.4046969 28.6875092 19.3397572"></polygon>
+            </g>
+            <g id="Stage-Copy-3" transform="translate(19.364069, 13.626567)">
+                <polygon id="Polygon" fill="#FFFFFF" points="28.6875092 29.3803854 35.1421987 15.7538186 22.2328196 2.86875092 6.45468956 0 0 3.58593864"></polygon>
+                <polygon id="Polygon" fill="#D8D6FE" points="28.6875092 19.3397572 28.6875092 29.4046969 0 13.6508783 0 3.58593864"></polygon>
+                <polygon id="Path" fill="#A5A0FC" points="35.1421987 15.795148 35.1421987 25.8600877 28.6875092 29.4046969 28.6875092 19.3397572"></polygon>
+            </g>
+            <g id="Stage-Copy-4" transform="translate(25.818758, 0.000000)">
+                <polygon id="Polygon" fill="#FFFFFF" points="28.6875092 29.3803854 35.1421987 15.7538186 6.45468956 0 0 3.58593864"></polygon>
+                <polygon id="Polygon" fill="#D8D6FE" points="28.6875092 19.3397572 28.6875092 29.4046969 0 13.6508783 0 3.58593864"></polygon>
+                <polygon id="Path" fill="#A5A0FC" points="35.1421987 15.795148 35.1421987 25.8600877 28.6875092 29.4046969 28.6875092 19.3397572"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

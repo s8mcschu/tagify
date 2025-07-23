@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Achievements/Completionist</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.893891189 0.864186915 48.8938912 0.864186915 48.8938912 70.8641869 26.8938912 70.8641869 0.893891189 57.8641869"></polygon>
+        <polygon id="path-3" points="5.57895711 0.639623394 35.6450839 13.7555686 39.2739123 28.3100045 24.7194764 31.938833 19.1448403 26.1144505 16.2417775 14.4709017 15.5081874 23.929329 2.25237118 8.12361221 0.727478483 1.84923287"></polygon>
+    </defs>
+    <g id="Achievements/Completionist" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BigFive" transform="translate(34.000000, 21.000000)">
+            <polygon id="Rectangle" fill="#B7B7E0" transform="translate(28.141284, 42.593490) rotate(5.000000) translate(-28.141284, -42.593490) " points="3.14128428 8.09349049 53.1412843 8.09349049 53.1412843 76.7792221 3.14128428 77.0935488"></polygon>
+            <polygon id="Rectangle" fill="#E3E3FF" transform="translate(30.452414, 40.466741) rotate(-4.000000) translate(-30.452414, -40.466741) " points="4.95241376 4.96674098 55.9524138 4.96674098 55.9524138 75.6433634 4.95241376 75.966801"></polygon>
+            <polygon id="Rectangle" fill-opacity="0.06" fill="#040461" transform="translate(33.824814, 40.357302) rotate(1.000000) translate(-33.824814, -40.357302) " points="5.33481064 2.49145197 57.3268908 1.58392683 63.0928443 78.1056531 26.6755998 79.1306764 4.5567837 72.5156954"></polygon>
+            <polygon id="Rectangle" fill-opacity="0.11155" fill="#06061B" transform="translate(33.130356, 39.129624) rotate(2.000000) translate(-33.130356, -39.129624) " points="4.55712518 4.88844193 57.6535362 1.62273551 61.703586 73.0351821 31.3078613 76.636513 7.98857999 67.8949584"></polygon>
+            <g id="Group-5" transform="translate(8.106109, 4.135813)">
+                <g id="Group" transform="translate(-0.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Rectangle" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <polygon id="Path-9" fill="#F0F0F5" mask="url(#mask-2)" points="-9 -22 15.3938912 5.86418692 56 -8.15384615"></polygon>
+                    <polygon id="Path-9" fill="#F8F8F8" mask="url(#mask-2)" points="-6.5 -24 15.3938912 5.86418692 -33 2.05263158"></polygon>
+                    <polygon id="Path-9" fill="#F5F5F7" mask="url(#mask-2)" points="-4 79 15.1944467 5.89068156 56 -8"></polygon>
+                    <polygon id="Path-9" fill="#F5F5F7" mask="url(#mask-2)" points="19 126 40.3461538 34 79 39.2075472"></polygon>
+                </g>
+                <g id="Lines" transform="translate(10.672129, 12.208486)" fill="#A8A6CC">
+                    <rect id="Rectangle" x="7.22176249" y="0.655701149" width="20" height="3"></rect>
+                    <rect id="Rectangle-Copy-4" x="7.22176249" y="7.65570115" width="20" height="3"></rect>
+                    <rect id="Rectangle-Copy-4" x="7.22176249" y="14.6557011" width="20" height="3"></rect>
+                    <rect id="Rectangle-Copy-4" x="7.22176249" y="21.6557011" width="20" height="3"></rect>
+                    <rect id="Rectangle-Copy-4" x="7.22176249" y="28.6557011" width="20" height="3"></rect>
+                    <rect id="Rectangle" x="0.221762493" y="0.655701149" width="4" height="3"></rect>
+                    <rect id="Rectangle-Copy-4" x="0.221762493" y="7.65570115" width="4" height="3"></rect>
+                    <rect id="Rectangle-Copy-4" x="0.221762493" y="14.6557011" width="4" height="3"></rect>
+                    <rect id="Rectangle-Copy-4" x="0.221762493" y="21.6557011" width="4" height="3"></rect>
+                    <rect id="Rectangle-Copy-4" x="0.221762493" y="28.6557011" width="4" height="3"></rect>
+                </g>
+                <polygon id="Path-2" fill="#D8D8EF" points="0.893891189 57.8641869 20.3056559 57.8641869 26.8938912 70.8641869"></polygon>
+            </g>
+            <g id="Feather" transform="translate(3.597515, 18.538248)">
+                <g id="Group-6" transform="translate(43.679149, 42.854626) rotate(14.000000) translate(-43.679149, -42.854626) translate(23.679149, 26.854626)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Path-6" fill="#FDE003" xlink:href="#path-3"></use>
+                    <polygon id="Path-6" fill="#F6C744" mask="url(#mask-4)" points="0.727478483 1.84923287 5.64706388 0.641025697 37.5856754 13.2717248 42.9105652 30.495126 20.6068042 15.4438056 24.9613983 32.9091287 19.6286841 28.0550419 15.5160118 11.5600146"></polygon>
+                    <polygon id="Path" fill="#FFAC45" mask="url(#mask-4)" points="9.45492373 7.91814541 13.0837522 22.4725813 2.15702031 13.133063 -0.406766361 1.10141824"></polygon>
+                </g>
+                <polygon id="Path-8" fill="#474747" transform="translate(31.841100, 27.266874) rotate(14.000000) translate(-31.841100, -27.266874) " points="4.55455711 6.44444907 58.1314462 43.5862981 59.1276419 48.0892994 5.76416659 11.2959277"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

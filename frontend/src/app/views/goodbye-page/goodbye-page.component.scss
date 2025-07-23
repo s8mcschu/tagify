@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container {
+  width: var(--background-container-width);
+  max-width: var(--background-container-max-width);
+  
+  margin: 15px;
+  padding: 15px;
+
+  background-color: var(--color-background);
+  border-radius: 10px;
+
+  h3 {
+    margin-bottom: 0;
+  }
+}

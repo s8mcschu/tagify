@@ -1,0 +1,9 @@
+<div class="container">
+  <div id="survey-container"></div>
+  <div class="navigation">
+    <button *ngIf="notFirstPage" color="primary" class="align-left" (click)="previousPage()" mat-raised-button>Previous</button>
+    <button *ngIf="!isLastPage" color="primary" class="align-right" (click)="nextPage()" mat-raised-button>Next</button>
+    <button *ngIf="isLastPage" color="primary" class="align-right" [disabled]="disableButton" (click)="completeSurvey()" mat-raised-button>Continue</button>    
+  </div>
+</div>
+

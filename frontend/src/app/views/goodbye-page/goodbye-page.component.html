@@ -1,0 +1,41 @@
+<div class="container">
+  <h1>Study Complete!</h1>
+  <p>
+    Thank you for your time and for participating in the image tagging task.
+  </p>
+
+  <div *ngIf="forwardUrl">  
+    <h3>Prolific Users</h3>
+    <p>Follow this link: <a [href]="forwardUrl">{{forwardUrl}}</a></p>  
+  </div>
+
+  <p><strong>You can now close this window.</strong></p>
+
+  <h2>Purpose of this study</h2>
+
+  <p>
+    This study investigates the effects of sound in gamification.
+    Gamification describes the use of game elements in non-game contexts.
+    This is usually done to increase user motivation.
+    E.g., going for a run can be rewarded with Points, or reaching certain milestones can be rewarded with Badges.
+  </p>
+
+  <p>
+    To investigate the effectiveness of sound, participants are assigned to one of four conditions upon starting the study:
+  </p>
+  <ol>
+    <li>No Gamification</li>
+    <li>Gamification</li>
+    <li>Gamification + Sound</li>
+    <li>Sound Only</li>
+  </ol>
+
+  <p>
+    Based on this setup,
+    participants will perform the image tagging task with either no game element at all (1.), 
+    Points and Badges which are rewarded and unlocked for tags (2. & 3.) and / or sound (3. & 4.)
+    In the evaluation, conclusions about the effectiveness of sound can be drawn based on the amount of tags submitted by users in each condition among other factors.
+  </p>
+
+  <h3>If you have any further comments or questions, feel free to contact us at <a [href]="'mailto:' + contactMail">{{contactMail}}</a></h3>
+</div>

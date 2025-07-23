@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Tutorial</h2>
+<mat-dialog-content class="mat-typography">
+  <p>
+    In the following you will be shown several images<span *ngIf="resourceTime > 0">, each for <strong>{{resourceTime | timeConverter: 'ms':'s'}} seconds</strong></span>.
+  </p>
+
+  <div *ngIf="resourceTime > 0">
+    <p>The bar on top, as well as a countdown below the image, will indicate the remaining time:</p>
+    <img src="../../../../assets/images/tutorials/image.png">
+  </div>
+  <p *ngIf="resourceTime <= 0">Once you have taken a proper look at the image, you continue by pressing the "continue" button.</p>
+
+  <p>
+    Afterwards the panel will flip around showing a tagging field, which will be explained in the next step. 
+    For now, take a closer look at the image.
+  </p>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

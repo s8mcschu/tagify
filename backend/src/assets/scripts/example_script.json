@@ -1,0 +1,52 @@
+[
+  {
+    "page": "instruction",
+    "content": {
+      "heading": "Instruction Example",
+      "text": "This text will be shown below the heading."
+    }
+  },
+  {
+    "page": "tagging",
+    "content": {
+      "gamification": "points",
+      "tutorial": true,
+      "resourceIdx": 0,
+      "resources": [
+        "im1443.jpg",
+        "im748.jpg",
+        "im21636.jpg"
+      ]
+    }
+  },
+  {
+    "page": "tagging",
+    "content": {
+      "gamification": "points",
+      "tutorial": false,
+      "shuffleResources": true,
+      "resourceIdx": 0,
+      "resources": [
+        "im7912.jpg",
+        "im15049.jpg",
+        "im17498.jpg",
+        "im17597.jpg",
+        "im18983.jpg",
+        "im19428.jpg",
+        "im20367.jpg",
+        "im22088.jpg",
+        "im23010.jpg",
+        "im1077.jpg"
+      ]
+    }
+  },
+  {
+    "page": "survey",
+    "content": [
+      "demographics"
+    ]
+  },
+  {
+    "page": "end"
+  }
+]

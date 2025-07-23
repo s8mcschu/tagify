@@ -1,0 +1,136 @@
+{
+  "name": "Intrinsic Motivation Inventory",
+  "title": "Tagging Experience",
+  "elements": [
+    {
+      "type": "matrix",
+      "name": "IMI",
+      "isRequired": true,
+      "isAllRowRequired": true,
+      "rowsOrder": "random",
+      "title": "Please indicate if you agree or disagree with the following statements",
+      "columns": [
+        {
+          "value": 1,
+          "text": "Not at all true"
+        },
+        {
+          "value": 2,
+          "text": " "
+        },
+        {
+          "value": 3,
+          "text": " "
+        },
+        {
+          "value": 4,
+          "text": "Somewhat true"
+        }, 
+        {
+          "value": 5,
+          "text": " "
+        },
+        {
+          "value": 6,
+          "text": " "
+        },
+        {
+          "value": 7,
+          "text": "Very true"
+        }
+      ],
+      "rows": [
+        {
+          "value": "Interest_1",
+          "text": "While I was working on the task I was thinking about how much I enjoyed it."
+        }, 
+        {
+          "value": "Pressure_1",
+          "text": "I did not feel at all nervous about doing the task."
+        }, 
+        {
+          "value": "Choice_1",
+          "text": "I felt that it was my choice to do the task."
+        }, 
+        {
+          "value": "Competence_1",
+          "text": "I think I am pretty good at this task."
+        },
+        {
+          "value": "Interest_2",
+          "text": "I found the task very interesting."
+        },
+        {
+          "value": "Pressure_2",
+          "text": "I felt tense while doing the task."
+        },
+        {
+          "value": "Competence_2",
+          "text": "I think I did pretty well at this activity, compared to other participants."
+        },
+        {
+          "value": "Interest_3",
+          "text": "Doing the task was fun."
+        }, 
+        {
+          "value": "Pressure_3",
+          "text": "I felt relaxed while doing the task."
+        }, 
+        {
+          "value": "Interest_4",
+          "text": "I enjoyed doing the task very much."
+        }, 
+        {
+          "value": "Choice_2",
+          "text": "I didn't really have a choice about doing the task."
+        },
+        {
+          "value": "Competence_3",
+          "text": "I am satisfied with my performance at this task."
+        },
+        {
+          "value": "Pressure_4",
+          "text": "I was anxious while doing the task."
+        },
+
+        {
+          "value": "Interest_5",
+          "text": "I thought the task was very boring."
+        }, 
+        {
+          "value": "Choice_3",
+          "text": "I felt like I was doing what I wanted to do while I was working on the task."
+        }, 
+        {
+          "value": "Competence_4",
+          "text": "I felt pretty skilled at this task."
+        }, 
+        {
+          "value": "Interest_6",
+          "text": "I thought the task was very interesting."
+        },
+        {
+          "value": "Pressure_5",
+          "text": "I felt pressured while doing the task."
+        },
+
+        {
+          "value": "Choice_4",
+          "text": "I felt like I had to do the task."
+        },
+        {
+          "value": "Interest_7",
+          "text": "I would describe the task as very enjoyable."
+        }, 
+        {
+          "value": "Choice_5",
+          "text": "I did the task because I had no choice."
+        }, 
+        {
+          "value": "Competence_5",
+          "text": "After working at this task for awhile, I felt pretty competent."
+        }
+      ]
+    }
+  ]
+}

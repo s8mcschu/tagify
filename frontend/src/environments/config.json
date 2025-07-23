@@ -1,0 +1,11 @@
+{
+  "version": "1.0.1",
+  "contactName": "Prename Surname",
+  "contactMail": "example.name@domain.com",
+  "resourceTimer": 5000,
+  "animationSpeedFactor": 2,
+  "allowManualViewAccess": false,
+  "allowZeroTags": false,
+  "resourceFolder": "images/tagging/",
+  "cookieBanner": true
+}

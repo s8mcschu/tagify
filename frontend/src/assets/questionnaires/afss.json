@@ -1,0 +1,152 @@
+{
+  "name": "Activity Flow State Scale",
+  "title": "Tagging Experience",
+  "elements": [
+    {
+      "type": "matrix",
+      "name": "AFSS",
+      "isRequired": true,
+      "isAllRowRequired": true,
+      "rowsOrder": "random",
+      "title": "Please indicate if you agree or disagree with the following statements",
+      "columns": [
+        {
+          "value": 1,
+          "text": "Strongly disagree"
+        },
+        {
+          "value": 2,
+          "text": "Disagree"
+        },
+        {
+          "value": 3,
+          "text": "Neither agree nor disagree"
+        },
+        {
+          "value": 4,
+          "text": "Agree"
+        }, 
+        {
+          "value": 5,
+          "text": "Strongly agree"
+        }
+      ],
+      "rows": [
+        {
+          "value": "MAA_1",
+          "text": "I performed automatically, without having to think about it."
+        }, 
+        {
+          "value": "MAA_2",
+          "text": "Things just seemed to happen automatically."
+        }, 
+
+        {
+          "value": "MAA_3",
+          "text": "I did things spontaneously without having to think."
+        },
+
+        {
+          "value": "CG_1",
+          "text": "I had a strong sense of what I wanted to accomplish."
+        },
+        {
+          "value": "CG_2",
+          "text": "I knew what I want to achieve."
+        },        
+        {
+          "value": "CG_3",
+          "text": "My goals were clearly defined."
+        },
+
+        {
+          "value": "CO_1",
+          "text": "My attention was focused entirely on what I was doing."
+        },
+
+        {
+          "value": "CO_2",
+          "text": "It was no effort to keep my mind on what was happening."
+        },
+        {
+          "value": "CO_3",
+          "text": "I had total concentration."
+        }, 
+        {
+          "value": "CO_4",
+          "text": "I had no difficulty concentrating."
+        }, 
+
+        {
+          "value": "UF_1",
+          "text": "It was really clear to me how my performance was going."
+        },
+        {
+          "value": "UF_2",
+          "text": "I had a good idea while I was performing about how well I was doing."
+        },
+
+        {
+          "value": "CS_1",
+          "text": "I was challenged, but I believe my skills will allow me to meet that challenge."
+        },
+        {
+          "value": "CS_2",
+          "text": "The challenge and my skills were at an equally high level."
+        },
+        {
+          "value": "CS_3",
+          "text": "I felt just the right amount of challenge."
+        },
+
+        {
+          "value": "TT_1",
+          "text": "Time seemed to alter (either slows down or speeds up)."
+        },
+        {
+          "value": "TT_2",
+          "text": "The way time passed seemed to be different from normal."
+        },
+        {
+          "value": "TT_3",
+          "text": "I lost my normal awareness of time."
+        },
+        
+        {
+          "value": "CN_1",
+          "text": "I felt as though I had everything under control."
+        },
+        {
+          "value": "CN_2",
+          "text": "I felt that I had everything under control."
+        },
+
+        {
+          "value": "SC_1",
+          "text": "I was not concerned with how others might be evaluating me."
+        },
+        {
+          "value": "SC_2",
+          "text": "I was not concerned with how I was presenting myself."
+        },
+        {
+          "value": "SC_3",
+          "text": "I was not worried about what others might be thinking of me."
+        },
+        
+        {
+          "value": "AE_1",
+          "text": "I really enjoyed the experience."
+        },
+        {
+          "value": "AE_2",
+          "text": "The experience left me feeling great."
+        },
+        {
+          "value": "AE_3",
+          "text": "The experience was extremely rewarding."
+        }
+      ]
+    }
+  ]
+}

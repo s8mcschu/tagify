@@ -1,0 +1,41 @@
+{
+  "name": "image-tagging-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run prismaMigrate && ts-node src/index.ts",
+    "build": "npm run prismaMigrate && tsc && npx cpy . ../../dist/assets --cwd=src/assets ",
+    "prismaMigrate": "prisma migrate dev --name init",
+    "prismaGenerate": "prisma generate",
+    "resetDB": "prisma migrate reset",
+    "abortActiveUsers": "ts-node misc/abortActiveUsers.ts",
+    "results": "ts-node misc/dataCSV.ts"
+  },
+  "author": "Marc Schubhan",
+  "license": "MIT",
+  "devDependencies": {
+    "@prisma/client": "^4.0.0",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.30",
+    "@types/npmlog": "^4.1.4",
+    "@types/seedrandom": "^3.0.2",
+    "@types/uuid": "^8.3.4",
+    "cpy-cli": "^4.1.0",
+    "prisma": "^4.0.0",
+    "ts-node": "^10.7.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "helmet": "^5.1.0",
+    "npmlog": "^6.0.2",
+    "seedrandom": "^3.0.5",
+    "uuid": "^8.3.2"
+  }
+}

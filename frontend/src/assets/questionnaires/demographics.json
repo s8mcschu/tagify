@@ -1,0 +1,35 @@
+{
+  "name": "Demographics",
+  "title": "Demographic Data",
+  "elements": [
+    {
+      "type": "radiogroup",
+      "name": "gender",
+      "isRequired": true,
+      "title": "To which gender do you most identify?",
+      "choices": [ "Female", "Male", "Non-binary", "Prefer not to say", "Prefer to self-describe" ],
+      "colCount": 1
+    },
+    {
+      "type": "text",
+      "name": "gender-description",
+      "title": "Description:",
+      "isRequired": true,
+      "visibleIf": "{gender}='Prefer to self-describe'"
+    },
+    {
+      "type": "radiogroup",
+      "name": "age",
+      "isRequired": true,
+      "title": "How old are you?",
+      "choices": ["< 18", "18 - 24", "25 - 31", "32 - 38", "39 - 45", "46 - 52", "53 - 59" ,"> 60"],
+      "colCount": 1
+    },
+    {
+      "type": "text",
+      "name": "nationality",
+      "title": "Nationality:",
+      "isRequired": true
+    }
+  ]
+}

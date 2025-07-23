@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container {
+  width: var(--background-container-width);
+  max-width: var(--background-container-max-width);
+  
+  margin: 15px;
+  padding: 15px;
+
+  background-color: var(--color-background);
+  border-radius: 10px;
+
+  audio {
+    display: block;
+    margin: 10px auto;
+  }
+
+  mat-form-field {
+    width: 350px;
+  }
+
+  .hint {
+    color: red;
+  }
+}

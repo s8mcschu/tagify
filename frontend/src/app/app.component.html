@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+  <span class="title">Tagging Platform <small>v{{version}}</small></span>
+  
+  <span class="spacer"></span>
+  <div *ngIf="isContentPage">
+    <span class="action" (click)="saveAndExit()">Save & Exit</span>
+    <span class="seperator">I</span>
+    <span class="action" (click)="abort()">Abort</span>  
+    <span class="seperator">I</span>
+  </div>
+  
+  <span class="action" (click)="showDataPrivacy()">Data Privacy</span>
+  <span class="seperator">I</span>
+  <span class="action" (click)="showImprint()">Imprint</span>
+</mat-toolbar>
+
+<tp-screen-too-small-view *ngIf="windowWidth < windowHeight || windowWidth < 800 || windowHeight < 500"></tp-screen-too-small-view>
+
+<mat-progress-bar *ngIf="isLoading || requesting" mode="indeterminate"></mat-progress-bar>
+<div *ngIf="!isLoading" [@routeTransition] class="router-container" [hidden]="windowWidth < windowHeight || windowWidth < 800 || windowHeight < 500">
+  <router-outlet></router-outlet>
+</div>
+
+<mat-card [@banner] *ngIf="showCookieBanner" class="cookieHint">
+  <mat-card-title>Cookie Info <mat-icon (click)="hideCookieBanner()">close</mat-icon></mat-card-title>
+  <mat-card-content>
+    This website uses essential cookies required for its core functionality.
+    No cookies relating to you as a person or cookies used for ad-tracking are stored.
+    To find out more, read our <a (click)="showDataPrivacy()">data privacy</a> statement.
+  </mat-card-content>
+</mat-card>

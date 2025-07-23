@@ -1,0 +1,73 @@
+:host {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 85%;
+    min-height: 435px;
+
+    &.align-bottom.align-right {
+      height: 30%;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }
+
+  .content-area {
+    box-sizing: border-box;
+
+    min-width: 400px;
+    max-width: 600px;
+    max-height: 750px;
+    width: 45%;
+    height: 100%;
+
+    padding: 10px;
+
+    background-color: var(--color-background);
+  
+    border-radius: 10px;
+
+    mat-progress-bar {
+      margin-bottom: 10px;
+    }
+
+    &.flexible {
+      height: fit-content;
+    }
+  }
+
+  .resource {
+    height: 70%;
+  }
+
+  .row.timer {
+    align-items: center;
+
+    height: 27%;
+    min-height: auto;
+    font-size: 5rem;
+    line-height: 5rem;
+
+    p {
+      margin: 0;
+    }
+  }
+}

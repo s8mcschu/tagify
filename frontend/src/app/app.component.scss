@@ -1,0 +1,65 @@
+small {
+  font-size: small;
+}
+
+span {
+  &.seperator {
+    margin: 0 10px;
+  }
+}
+
+.action {
+  cursor: pointer;
+  font-size: medium;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.router-container {
+  width: 100%;
+  height: calc(100% - 64px);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  
+  width: 100%;
+
+  .action {
+    margin: 0 5px;
+  }
+}
+
+mat-card {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+
+  width: 450px;
+
+  border-top: 5px solid var(--color-primary);
+
+  mat-icon {
+    float:right;
+    cursor: pointer;
+  }
+
+  a {
+    cursor: pointer;
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+}
+
+mat-progress-bar {
+  margin-bottom: -4px;
+}

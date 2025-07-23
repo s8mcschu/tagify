@@ -1,0 +1,12 @@
+{
+  "name": "Prolific ID",
+  "title": "Prolific ID",
+  "elements": [
+    {
+      "type": "text",
+      "name": "prolific-id",
+      "title": "Enter your Prolific ID:",
+      "isRequired": true
+    }
+  ]
+}

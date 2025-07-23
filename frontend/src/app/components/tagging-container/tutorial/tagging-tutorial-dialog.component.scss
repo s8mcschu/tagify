@@ -1,0 +1,17 @@
+img {
+  display: block;
+  max-width: 100%;
+  margin: 10px auto;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+h3:not(:first-child) {
+  margin-top: 20px;
+}
+
+mat-icon {
+  vertical-align: bottom;
+}

@@ -1,0 +1,13 @@
+package-lock.json
+node_modules
+dist
+*.db
+.env
+
+logs
+logs/**/*
+
+prisma/migrations/*_init
+
+output
+output/**/*

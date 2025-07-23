@@ -1,0 +1,61 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./database.db?socket_timeout=5"
+}
+
+model Group {
+  name           String @id
+  sequenceScript String @db.Text
+  maxStep        Int
+  users          User[]
+}
+
+model Tag {
+  id       Int    @id @default(autoincrement())
+  resource String
+  value    String 
+  quality  Int?
+  users    User[]
+
+  @@unique([resource, value])
+}
+
+model UserQuestionnaire {
+  user          String
+  questionnaire String
+  number        Int
+  answers       String   @db.Text
+  timestamp     DateTime @default(now())
+  users         User     @relation(fields: [user], references: [uuid], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([user, questionnaire, number])
+}
+
+model UserTiming {
+  user     String
+  step     Int
+  finished DateTime @default(now())
+  users    User     @relation(fields: [user], references: [uuid], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([user, step])
+}
+
+model User {
+  uuid               String              @id
+  group              String
+  step               Int                 @default(0)
+  taggingProgress    Int                 @default(0)
+  consent            Boolean             @default(false)
+  soundCalibration   Int?
+  aborted            Boolean             @default(false)
+  created            DateTime            @default(now())
+  finished           DateTime?
+  groups             Group               @relation(fields: [group], references: [name], onDelete: NoAction, onUpdate: NoAction)
+  userQuestionnaires UserQuestionnaire[]
+  userTimings        UserTiming[]
+  tags               Tag[]
+}

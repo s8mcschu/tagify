@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Welcome!</h1>
+  
+  <h3>Thank you for your interest in this study.</h3>
+  <p>
+    On the following pages you will go through several questionnaires and observe some images.
+    Each image will be shown for a short duration after which you will be asked to enter tags, which in your opinion, describe the image.
+    This process is called <strong>image tagging</strong> and helps us to improve image classification.
+  </p>
+  <p>
+    Participation will take <strong>approximately 20 minutes</strong>. Information on how we use the collected data can be found in the <a>data privacy statement</a>.
+    Collected data will be transmitted <strong>completely anonymized</strong> and cannot be related back to you as a person.
+  </p>
+  <p>
+    This study is carried out by {{contactName}} as part of his dissertation at Saarland University.
+  </p>
+
+  <div class="row align-right">
+    <mat-checkbox [(ngModel)]="consent" color="primary">I have read, understood and consent to the data privacy statement and allow my data to be processed for scientific purposes.</mat-checkbox>
+  </div>
+  <div class="row align-right">
+    <button 
+      mat-raised-button  
+      class="continue-button" 
+      color="primary"
+      [disabled]="!consent || disableButton"
+      (click)="submitAndNext()"
+    >
+      Start
+    </button>
+  </div>
+</div>

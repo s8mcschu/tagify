@@ -1,0 +1,100 @@
+@use '@angular/material' as mat;
+@import '_fonts';
+@import '_variables';
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$custom-typography: mat.define-typography-config(
+  $headline:  mat.define-typography-level(25px, 1.4em, 400),
+  $title:  mat.define-typography-level(21px, 1.4em, 500),
+  $subheading-2:  mat.define-typography-level(18px, 1.4em, 400),
+  $subheading-1:  mat.define-typography-level(16px, 1.4em, 400),
+  $body-1:  mat.define-typography-level(15px, 1.4em, 400),
+  $body-2:  mat.define-typography-level(15px, 1.4em, 400),
+  $button:  mat.define-typography-level(15px, 1.4em, 400),
+  $input:  mat.define-typography-level(15px, 0, 400),
+);
+
+//@include mat.core($custom-typography);
+
+.continue-button {
+  margin-top: 10px !important;
+}
+
+.row, .column {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+
+  &.align-left {
+    justify-content: flex-start;
+  }
+
+  &.align-right {
+    justify-content: flex-end;
+  }
+
+  &.align-top {
+    align-items: flex-start;
+  }
+
+  &.align-bottom {
+    align-items: flex-end;
+  }
+}
+
+.column {
+  flex-direction: column;
+}
+
+// STYLING FOR SURVEY JS
+.sd-matrix {
+  table {
+    table-layout: fixed;
+
+    td:first-child {
+      width: 35%;
+    }
+
+    td {
+      &.sd-table__cell.sd-matrix__cell {
+        padding-bottom: 5px;
+      }
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+
+      padding-bottom: 12px;
+
+      background-color: white;
+      
+      pointer-events: none;
+    }
+  }
+}
+
+.sd-element.sd-question.sd-row__question.sd-element--complex.sd-question--complex.sd-question--table.sd-element--with-frame { // Allows sticky table headers
+  overflow-x: inherit;
+}
+
+.sd-title.sd-page__title { // Increased title font size to match material theme
+  font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
+}
+
+.sd-rating__item.sd-rating__item--allowhover { // Higer Button contrast
+  box-shadow: 0px 2px 3px rgb(0 0 0 / 25%);
+}
+
+.sd-item__decorator.sd-radio__decorator { // Higher Button contrast
+  background: #f5f5f5;
+}
+
+.sd-item--checked .sd-item__decorator { // Higher Button contrast
+  background: var(--primary, #19b394);
+}

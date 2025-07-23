@@ -1,0 +1,57 @@
+:host {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  .box {
+    width: 150px;
+    padding: 10px;
+    
+    color: white;
+    background-color: var(--color-primary);
+  
+    border-radius: 5px;
+  
+    align-self: flex-end;
+
+    p {
+      margin: 0;
+      font-size: 18px;
+
+      span {
+        float: right;
+      }
+      
+      &::before{
+        content: "Points: ";
+      }
+    }
+  }
+  
+  .circle {
+    width: 30vmin;
+    height: 30vmin;
+  
+    border: 8px solid var(--color-primary);
+    border-radius: 20vmin;
+  
+    align-self: center;
+  
+    &.column {
+      justify-content: center;
+    }
+  
+    p {
+      font-size: 12vmin;
+      line-height: 12vmin;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+
