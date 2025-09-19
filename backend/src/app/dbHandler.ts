@@ -7,20 +7,45 @@ const scripts = fs.readdirSync(path.resolve(__dirname, '..', 'assets', 'scripts'
   .filter(fileName => fileName.split(".")[1] === "json")
   .map(fileName => fileName.split(".")[0]);
 
-const prisma = new PrismaClient();
-
-prisma.$use(async (params, next) => {
-  logInfo('DB', `Query ${params.model}.${params.action}: ${JSON.stringify(params.args)}`);
-  try {
-    const result = await next(params);
-    logInfo('DB', `Result: ${JSON.stringify(result)}`);
-    return result;
-  }
-  catch(err: any) {
-    logError('DB', err);
-    throw err;
-  }
+const prisma = new PrismaClient({
+    log: [
+    {
+      emit: 'event',
+      level: 'query',
+    },
+    {
+      emit: 'event',
+      level: 'error',
+    },
+    {
+      emit: 'event',
+      level: 'info',
+    },
+    {
+      emit: 'event',
+      level: 'warn',
+    },
+  ]
 });
+
+prisma.$on('query', (e) => {
+  logInfo('DB', 'Query: ' + e.query)
+  logInfo('DB', 'Params: ' + e.params)
+  logInfo('DB', 'Duration: ' + e.duration + 'ms')
+})
+
+prisma.$on('error', (e) => {
+  logError('DB', 'Query: ' + e.message)
+})
+
+prisma.$on('info', (e) => {
+  logError('DB', 'Query: ' + e.message)
+})
+
+prisma.$on('warn', (e) => {
+  logError('DB', 'Query: ' + e.message)
+})
+
 
 init();
 

@@ -1,0 +1,6 @@
+<div class="container row"
+     [class.duplicate-warning]="warningTrigger()"
+     animate.enter="duplicate-enter">
+  <span>{{value}}</span>
+  <mat-icon (click)="deleteTag()">close</mat-icon>
+</div>

@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    @if(showResource()) {
+      <div class="content-area" animate.enter="flip-enter" animate.leave="flip-leave">
+        @if(timerDuration > 0) {
+            <mat-progress-bar mode="determinate" [value]="countDownProgress()"></mat-progress-bar>
+        }
+        <div class="resource">
+          <app-image-container 
+            [imgSrc]="currentResource()"
+            [triggerTutorialEvent]="triggerResourceTutorial.asObservable()"
+            (onTutorialClosed)="onResourceTutorialClosed()"
+            (onImageLoaded)="onResourceLoaded()"
+          ></app-image-container>
+        </div>
+        
+        @if(timerDuration > 0) {
+            <div class="timer row"><p>{{ countDown() | timeConverter: 'ms':'s' | ceil }}</p></div>
+        }
+        @else {
+            <div class="row align-bottom align-right">
+                <button mat-raised-button color="primary" (click)="triggerFlip()">Continue</button>
+            </div>
+        }
+      </div>
+    }
+
+    @if(showTaggingField()) {
+        <div class="content-area" animate.enter="flip-enter" animate.leave="flip-leave">
+            <app-tagging-container
+            [triggerTutorialEvent]="triggerTaggingTutorial.asObservable()"
+            (onTutorialClosed)="onTaggingTutorialClosed()" 
+            (onEmitTags)="submitTags($event)"
+            ></app-tagging-container>
+        </div>
+    }
+
+      
+    @if(config().gamification && config().gamification !== 'NONE') {
+        <div 
+          [style.display]="config().hidden ? 'none' : 'block'"
+          class="content-area flexible"
+        >
+            <app-gamification-container 
+              [gamification]="config().gamification!"
+              [triggerTutorialEvent]="triggerGameElementTutorial.asObservable()" 
+              (onTutorialClosed)="onGamificationTutorialClosed()"
+            ></app-gamification-container>
+      </div>
+    }
+
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<p>Please write down as many <strong>tags</strong> as you can think of describing the prior image.<br>
+Tags can be separated either by pressing SPACE, ENTER or the <mat-icon>add</mat-icon> button in the input field.</p>
+<p>Once you are done, press "Next" to submit your tags.</p>
+<div #tagContainer class="tag-container row">
+    @for(tag of tags(); track tag.value) {
+      <app-tag 
+        animate.leave="remove-tag-leave"
+        [value]="tag.value"
+        [triggerDuplicateEvent]="tag.duplicateSubject?.asObservable()"
+        (onDeleteTag)="onDeleteTag($event)">
+      </app-tag>
+    }
+</div>
+
+<div class="tag-input">
+  <form>
+    <mat-form-field appearance="fill">
+      <input
+        matInput
+        tpAutoFocus
+        type="text"
+        name="tag-input"
+        placeholder="Enter tag..."
+        [(ngModel)]="tagInput"
+        (input)="onCharacterInput()"
+        (keydown.enter)="addTag()"
+        (keydown.space)="!tagInput ? $event.preventDefault() : {}"
+      />
+      <mat-icon matSuffix (click)="addTag()">add</mat-icon>
+    </mat-form-field>
+  </form>
+</div>
+
+<div class="row align-left">
+  <button mat-raised-button color="primary" [disabled]="(tags().length === 0 && !allowZeroTags) || disableButton()" (click)="emitTags()">Next</button>
+</div>
