@@ -24,7 +24,7 @@ Features of the platform are:
 
 
 ## Setup
-- Install [NodeJS](https://nodejs.org/en/) v16.15 or newer
+- Install [NodeJS](https://nodejs.org/en/) v20.19 or newer
 - [Download](https://github.com/s8mcschu/tagging-platform/archive/refs/heads/main.zip) or clone this repository
 - Run `npm install` in a shell in both [/frontend](./frontend) and [/backend](./backend) each
 
