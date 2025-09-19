@@ -1,5 +1,8 @@
 # Tagging Platform
 
+⚠️ This version features the most recent package versions of Angular, Express, Prisma.io and more, but has *not been thoroughly tested as of now. When using make sure to properly test your setup. ⚠️ 
+
+
 Welcome to the repository of the Tagging Platform!
 
 The platform is built for research purposes and has been strongly influenced by gamification research. It offers an environment in which study hosts can define individual study conditions, where participants can tag images and answer questionnaires.
