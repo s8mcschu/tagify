@@ -1,5 +1,11 @@
 # Tagging Platform
 
+➡️ There is a more recent version of Tagify featuring the latest packages [on this branch](https://github.com/s8mcschu/tagify/tree/next). This version is not thoroughly tested as of today.
+
+➡️ When choosing either of both versions make sure to **test your own setup and configuration properly**.
+
+---
+
 Welcome to the repository of the Tagging Platform!
 
 The platform is built for research purposes and has been strongly influenced by gamification research. It offers an environment in which study hosts can define individual study conditions, where participants can tag images and answer questionnaires.
