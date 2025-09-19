@@ -1,6 +1,7 @@
 # Tagging Platform
 
-⚠️ This version features the most recent package versions of Angular, Express, Prisma.io and more, but has *not been thoroughly tested as of now. When using make sure to properly test your setup. ⚠️ 
+⚠️ This version features the most recent package versions of Angular, Express, Prisma.io and more, but has **not been thoroughly tested** as of now. When using make sure to properly test your setup. ⚠️
+You can find the outdated version [here](https://github.com/s8mcschu/tagify/tree/main).
 
 
 Welcome to the repository of the Tagging Platform!
