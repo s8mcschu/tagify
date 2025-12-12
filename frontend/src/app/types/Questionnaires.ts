@@ -1,10 +1,10 @@
 // IMPORT QUESTIONNAIRES
-import * as imi from '../../assets/questionnaires/imi.json';
-import * as sus from'../../assets/questionnaires/sus.json';
-import * as demographics from '../../assets/questionnaires/demographics.json';
-import * as prolificID from "../../assets/questionnaires/prolificID.json";
-import * as affs from "../../assets/questionnaires/afss.json";
-import * as sam from "../../assets/questionnaires/sam.json";
+import * as imi from "../../../public/questionnaires/imi.json";
+import * as sus from'../../../public/questionnaires/sus.json';
+import * as demographics from '../../../public/questionnaires/demographics.json';
+import * as prolificID from "../../../public/questionnaires/prolificID.json";
+import * as affs from "../../../public/questionnaires/afss.json";
+import * as sam from "../../../public/questionnaires/sam.json";
 
 
 // Make the Questionnaire known and accessible for the Platform. 

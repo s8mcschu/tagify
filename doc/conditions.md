@@ -31,7 +31,7 @@ An example script can be found [here](./examples/example_script.json).
 ### Tagging View
 
 An overview on the usable gamification elements can be taken from the [Gamification Type](../frontend/src/app/types/Gamification.ts) in the frontend.  
-Images to be tagged can be put into the [frontend/src/assets/images/tagging](../frontend/src/assets/images/tagging/) directory. There is already a pre-selection of images available.
+Images to be tagged can be put into the [frontend/public/images/tagging](../frontend/public/images/tagging/) directory. There is already a pre-selection of images available.
 
 ```ts
 {
@@ -88,5 +88,7 @@ Images to be tagged can be put into the [frontend/src/assets/images/tagging](../
   }
 }
 ```
+
+If you use a forwardUrl, make sure to prefix it with a protocol (e.g. https://), otherwise the redirect will not properly work!
 
 ![](./img/end.png "Image showcase")

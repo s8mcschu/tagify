@@ -7,6 +7,10 @@
     }
   },
   {
+    "page": "calibration",
+    "content": {}
+  },
+  {
     "page": "tagging",
     "content": {
       "gamification": "points",
@@ -22,7 +26,7 @@
   {
     "page": "tagging",
     "content": {
-      "gamification": "points",
+      "gamification": "points-and-badges",
       "tutorial": false,
       "shuffleResources": true,
       "resourceIdx": 0,
@@ -31,12 +35,7 @@
         "im15049.jpg",
         "im17498.jpg",
         "im17597.jpg",
-        "im18983.jpg",
-        "im19428.jpg",
-        "im20367.jpg",
-        "im22088.jpg",
-        "im23010.jpg",
-        "im1077.jpg"
+        "im18983.jpg"
       ]
     }
   },
@@ -47,6 +46,9 @@
     ]
   },
   {
-    "page": "end"
+    "page": "end",
+    "content": {
+      "forwardUrl": "https://www.google.com"
+    }
   }
 ]

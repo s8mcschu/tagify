@@ -1,20 +1,20 @@
 @use '@angular/material' as mat;
-@import '_fonts';
-@import '_variables';
+@use '_fonts';
+@use '_variables';
 
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-$custom-typography: mat.define-typography-config(
-  $headline:  mat.define-typography-level(25px, 1.4em, 400),
-  $title:  mat.define-typography-level(21px, 1.4em, 500),
-  $subheading-2:  mat.define-typography-level(18px, 1.4em, 400),
-  $subheading-1:  mat.define-typography-level(16px, 1.4em, 400),
-  $body-1:  mat.define-typography-level(15px, 1.4em, 400),
-  $body-2:  mat.define-typography-level(15px, 1.4em, 400),
-  $button:  mat.define-typography-level(15px, 1.4em, 400),
-  $input:  mat.define-typography-level(15px, 0, 400),
+$custom-typography: mat.m2-define-typography-config(
+  $headline-1:  mat.m2-define-typography-level(25px, 1.4em, 400),
+  $headline-2:  mat.m2-define-typography-level(21px, 1.4em, 500),
+  $subtitle-1:  mat.m2-define-typography-level(18px, 1.4em, 400),
+  $subtitle-2:  mat.m2-define-typography-level(16px, 1.4em, 400),
+  $body-1:  mat.m2-define-typography-level(15px, 1.4em, 400),
+  $body-2:  mat.m2-define-typography-level(15px, 1.4em, 400),
+  $button:  mat.m2-define-typography-level(15px, 1.4em, 400),
+  $caption:  mat.m2-define-typography-level(15px, 0, 400),
 );
 
 //@include mat.core($custom-typography);

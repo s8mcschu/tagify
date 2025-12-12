@@ -9,7 +9,7 @@ datasource db {
 
 model Group {
   name           String @id
-  sequenceScript String @db.Text
+  sequenceScript String //@db.Text
   maxStep        Int
   users          User[]
 }
@@ -28,7 +28,7 @@ model UserQuestionnaire {
   user          String
   questionnaire String
   number        Int
-  answers       String   @db.Text
+  answers       String   //@db.Text
   timestamp     DateTime @default(now())
   users         User     @relation(fields: [user], references: [uuid], onDelete: Cascade, onUpdate: NoAction)
 

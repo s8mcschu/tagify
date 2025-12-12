@@ -1,0 +1,33 @@
+<h1>Badges</h1>
+<div class="badges-container">
+  @for (badge of badges(); track badge.name) {
+    @if (badge.fulfilled) {
+      <div
+        class="badge"
+        [matTooltip]="badge.tipp"
+        matTooltipPosition="above"
+      >
+        <img
+            animate.enter="unlock-animation"
+            class="overlay"
+            [ngClass]="badge.fulfilled ? 'unlocked' : 'locked'"
+            [src]="'icons/' + badge.background"
+        >
+        <img
+            animate.enter="unlock-animation"
+            [ngClass]="badge.fulfilled ? 'unlocked' : 'locked'"
+            [src]="'icons/' + badge.icon"
+        >
+        <h3 class="badge-name">{{badge.name}}</h3>
+      </div>
+    }
+  }
+  
+  @if (unlockedBadges.length === 0) {
+    <div class="badge">
+        <img class="overlay" src="icons/LockedOverlay.svg">
+        <img class="locked" src="icons/FrameLvl7.svg">
+        <p>No Badge unlocked yet</p>
+    </div>
+  }
+</div>

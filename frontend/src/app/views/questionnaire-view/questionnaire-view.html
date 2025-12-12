@@ -1,0 +1,16 @@
+<div class="container">
+  <div id="survey-container"></div>
+  <div class="navigation">
+    @if(notFirstPage) {
+         <button color="primary" class="align-left" (click)="previousPage()" mat-raised-button>Previous</button>
+    }
+
+    @if(!isLastPage) {
+         <button color="primary" class="align-right" (click)="nextPage()" mat-raised-button>Next</button>
+    }
+    @else {
+        <button color="primary" class="align-right" [disabled]="disableButton()" (click)="completeSurvey()" mat-raised-button>Continue</button>
+    }
+  </div>
+</div>
+

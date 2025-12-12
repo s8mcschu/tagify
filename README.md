@@ -1,10 +1,9 @@
 # Tagging Platform
 
-➡️ There is a more recent version of Tagify featuring the latest packages [on this branch](https://github.com/s8mcschu/tagify/tree/next). This version is not thoroughly tested as of today.
 
-➡️ When choosing either of both versions make sure to **test your own setup and configuration properly**.
+⚠️ This version features the most recent package versions of Angular, Express, Prisma.io and more, but has **not been thoroughly tested** as of now. When using make sure to properly test your setup. ⚠️
 
----
+
 
 Welcome to the repository of the Tagging Platform!
 
@@ -23,7 +22,7 @@ Features of the platform are:
 
 
 ## Setup
-- Install [NodeJS](https://nodejs.org/en/) v16.15 or newer
+- Install [NodeJS](https://nodejs.org/en/) v20.19 or newer
 - [Download](https://github.com/s8mcschu/tagging-platform/archive/refs/heads/main.zip) or clone this repository
 - Run `npm install` in a shell in both [/frontend](./frontend) and [/backend](./backend) each
 
