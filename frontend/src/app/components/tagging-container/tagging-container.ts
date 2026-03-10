@@ -90,7 +90,7 @@ export class TaggingContainer implements OnInit, OnDestroy, AfterViewChecked {
   }
 
   public onDeleteTag(tag: string) {
-    for(let i = 0; i < this.tags.length; i++) {
+    for(let i = 0; i < this.tags().length; i++) {
       if(this.tags()[i].value === tag) {
         let del: SimpleTag[] = []
 
